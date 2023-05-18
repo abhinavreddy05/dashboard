@@ -121,16 +121,21 @@ nav ul li a:hover, .active{
 }
 
 @media (max-width: 900px) {
+    body{
+        padding: 10px 0;
+    }
     .sidebar{
         width: fit-content;
-        z-index: 3;
+        z-index: 1;
     }
-
+    .main{
+        z-index: -1;
+    }
+    
     .sidebar .top #logo{
         display: none;
         width: 2.2rem;
     }
-
     .sidebar .top #logo-mobile{
         display: block;
         width: 2rem;
