@@ -14,6 +14,12 @@
 <body>
     <div class="sidebar col-2">
             <div class="top">
+                <button id="hamburger">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </button>
+                <img id="logo-mobile" src="./assets/images/ecell-logo-mobile.png">
                 <img id="logo" src="./assets/images/ecell-logo.png" alt="ECell IIT Kharagpur">
             </div>
             <div class="middle">
@@ -21,25 +27,25 @@
                     <ul>
                         <li><a href="" class="active">
                             <span class="material-symbols-outlined">team_dashboard</span>
-                            Dashboard</a></li>
+                            <span class="linktxt">Dashboard</span></a></li>
                         <li><a href="">
                             <span class="material-symbols-outlined">
                                 gavel
                             </span>
-                            Judging Portal</a></li>
+                            <span class="linktxt">Judging Portal</span></a></li>
                         <li><a href="">
                             <span class="material-symbols-outlined">
                                 leaderboard
                             </span>
-                            Leaderboard</a></li>
+                            <span class="linktxt">Leaderboard</span></a></li>
                         <li><a href="">
                             <span class="material-symbols-outlined">
                                 groups
                             </span>
-                            Participants</a></li>
+                            <span class="linktxt">Participants</span></a></li>
                         <li><a href="">
                             <span class="material-symbols-outlined">logout</span>
-                            Log out</a></li>
+                            <span class="linktxt">Log out</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -138,4 +144,5 @@
             </div>
         </div>
 </body>
+<script src="./hamburger.js"></script>
 </html>
