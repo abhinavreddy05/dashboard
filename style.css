@@ -53,6 +53,7 @@ ul li{
     justify-content: center;
     align-items: center;
     padding-right: 10px;
+    min-width: fit-content;
 }
 
 .sidebar .top{
@@ -65,6 +66,7 @@ ul li{
 
 .sidebar .top #logo{
     width: 12rem;
+    min-width: 9rem;
 }
 
 .sidebar .middle{
@@ -204,6 +206,10 @@ nav ul li a:hover, .active{
 
 .stats{
     padding: 0.5rem 0.5rem;
+}
+
+.stats h4{
+    margin: 0.5rem 0.1rem;
 }
 
 .stats ul{
