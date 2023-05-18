@@ -7,6 +7,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Hint CSS -->
+    <link rel="stylesheet" href="./assets/css/hint.base.css" />
+
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
@@ -14,7 +17,7 @@
 <body>
     <div class="sidebar col-2">
             <div class="top">
-                <button id="hamburger">
+                <button id="hamburger" class="hint--right" aria-label="Expand">
                     <span class="material-symbols-outlined">
                         chevron_right
                     </span>
@@ -25,25 +28,25 @@
             <div class="middle">
                 <nav>
                     <ul>
-                        <li><a href="" class="active">
+                        <li><a href="" class="active hint--right" aria-label="Dashboard">
                             <span class="material-symbols-outlined">team_dashboard</span>
                             <span class="linktxt">Dashboard</span></a></li>
-                        <li><a href="">
+                        <li><a href="" class="hint--right" aria-label="Judging Portal">
                             <span class="material-symbols-outlined">
                                 gavel
                             </span>
                             <span class="linktxt">Judging Portal</span></a></li>
-                        <li><a href="">
+                        <li><a href="" class="hint--right" aria-label="Leaderboard">
                             <span class="material-symbols-outlined">
                                 leaderboard
                             </span>
                             <span class="linktxt">Leaderboard</span></a></li>
-                        <li><a href="">
+                        <li><a href="" class="hint--right" aria-label="Participants">
                             <span class="material-symbols-outlined">
                                 groups
                             </span>
                             <span class="linktxt">Participants</span></a></li>
-                        <li><a href="">
+                        <li><a href="" class="hint--right" aria-label="Log out">
                             <span class="material-symbols-outlined">logout</span>
                             <span class="linktxt">Log out</span></a></li>
                     </ul>

@@ -10,6 +10,7 @@ hamburger.addEventListener("click", ()=>{
         logoMobile.style.display = "none"
         logo.style.display = "block"
         hamburger.innerHTML = "<span class='material-symbols-outlined'>close</span>"
+        hamburger.ariaLabel = "Collapse"
     } else {
         prop = "none"
         logoMobile.style.display = "block"
