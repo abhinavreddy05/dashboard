@@ -120,47 +120,6 @@ nav ul li a:hover, .active{
     opacity: 1;
 }
 
-@media (max-width: 900px) {
-    body{
-        padding: 10px 0;
-        overflow-x: hidden;
-    }
-    .sidebar{
-        width: fit-content;
-    }
-    .sidebar .top #logo{
-        display: none;
-        width: 2.2rem;
-    }
-    .sidebar .top #logo-mobile{
-        display: block;
-        width: 2rem;
-    }
-    .sidebar .top #hamburger{
-        display: block;
-        color: var(--secondaryColor);
-        box-shadow: none;
-        border: none;
-        border-radius: 100px;
-        padding: 0 0.2rem;
-    }
-    .main{
-        width: max-content;
-    }
-    nav ul li .linktxt{
-        display: none;
-    }
-}
-
-@media (max-width: 800px){
-    .main .right{
-        display: none;
-    }
-    .main .left{
-        width: max-content;
-    }
-}
-
 .main{
     display: flex;
     padding: 0;
@@ -312,4 +271,48 @@ nav ul li a:hover, .active{
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
+}
+
+@media (max-width: 900px) {
+    body{
+        padding: 10px 0;
+        overflow: hidden;
+        height: 96svh;
+    }
+    .sidebar{
+        width: fit-content;
+    }
+    .sidebar .top #logo{
+        display: none;
+        width: 2.2rem;
+    }
+    .sidebar .top #logo-mobile{
+        display: block;
+        width: 2rem;
+    }
+    .sidebar .top #hamburger{
+        display: block;
+        color: var(--secondaryColor);
+        box-shadow: none;
+        border: none;
+        border-radius: 100px;
+        padding: 0 0.2rem;
+    }
+    nav ul li .linktxt{
+        display: none;
+    }
+    .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .main .right{
+        display: none;
+    }
+    .main .left{
+        width: 100%;
+        min-width: 280px;
+        padding: 1rem;
+    }
 }
