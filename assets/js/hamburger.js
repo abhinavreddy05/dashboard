@@ -21,3 +21,14 @@ hamburger.addEventListener("click", ()=>{
         linktxt[i].style.display = prop;
     }
 })
+
+
+window.addEventListener("resize", function() {
+    if (window.matchMedia("(min-width: 900px)").matches) {
+        logo.style.removeProperty("display")
+        logoMobile.style.removeProperty("display")
+        for (let i = 0; i < linktxt.length; i++) {
+            linktxt[i].style.removeProperty("display");
+        }
+    }
+})

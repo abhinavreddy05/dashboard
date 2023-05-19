@@ -73,6 +73,10 @@ ul li{
 }
 
 .sidebar .top #logo-mobile{
+    width: 2rem;
+}
+
+.sidebar .top #logo-mobile{
     display: none;
 }
 
