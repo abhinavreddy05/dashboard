@@ -4,7 +4,7 @@ const logo = document.getElementById("logo");
 const logoMobile = document.getElementById("logo-mobile");
 
 hamburger.addEventListener("click", ()=>{
-    var prop, img
+    var prop
     if (linktxt[0].style.display === "none") {
         prop = "block"
         logoMobile.style.display = "none"
