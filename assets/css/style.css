@@ -54,6 +54,7 @@ ul li{
     align-items: center;
     padding-right: 10px;
     min-width: fit-content;
+    max-width: max-content;
 }
 
 .sidebar .top{
@@ -127,6 +128,7 @@ nav ul li a:hover, .active{
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     overflow-y: overlay;
+    width: 100%;
 }
 
 .main .left{
@@ -273,6 +275,10 @@ nav ul li a:hover, .active{
     font-size: 0.8rem;
 }
 
+.pricard{
+    display: none;
+}
+
 @media (max-width: 900px) {
     body{
         padding: 10px 0;
@@ -297,6 +303,7 @@ nav ul li a:hover, .active{
         border: none;
         border-radius: 100px;
         padding: 0 0.2rem;
+        cursor: pointer;
     }
     nav ul li .linktxt{
         display: none;
@@ -313,6 +320,146 @@ nav ul li a:hover, .active{
     .main .left{
         width: 100%;
         min-width: 280px;
+        padding: 1.5rem;
+    }
+    .pricard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #00000025;
         padding: 1rem;
+        border-radius: 10px;
+        margin: 1rem 0;
+    }
+    .pricard .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        border-right: 1px solid #00000025;
+        padding-right: 2rem;
+    }
+    
+    .pricard .profile #profile{
+        width: 6.5rem;
+        height: 6.5rem;
+        border-radius: 100%;
+        padding: 2px;
+        border: 2px solid #00000025;
+    }
+    
+    .pricard .profile h2{
+        margin: 0.3rem 0;
+        padding: 0;
+        font-size: 1.3rem;
+    }
+    
+    .pricard .profile p{
+        margin-top: 0;
+        padding: 0;
+        opacity: 0.8;
+        font-size: 0.8rem;
+    }
+    
+    .pricard .profile ul{
+        margin: 0.5rem 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: nowrap;
+    }
+    
+    .pricard .profile ul li{
+        padding: 0;
+        margin: 0;
+        opacity: 0.5;
+    }
+    
+    .pricard .profile ul li:hover{
+        opacity: 1;
+    }
+
+    .pricard .activity{
+        padding: 0.5rem 0rem;
+    }
+
+    .pricard .activity h4{
+        margin: 0.5rem 0.1rem;
+    }
+
+    .pricard .activity ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0.6rem;
+    }
+
+    .pricard .activity ul li{
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 0.5rem;
+        width: 100%;
+        min-width: 7rem;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 4px 12px;
+        transition: all 0.08s ease;
+    }
+
+    .pricard .activity ul li:hover{
+        transform: scale(0.98);
+    }
+
+    .pricard .activity ul li span{
+        font-size: 2rem;
+    }
+
+    .pricard .activity ul li div{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricard .activity ul li div h5{
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pricard .activity ul li div p{
+        margin: 0;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .pricard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .pricard .profile{
+        padding: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: none;
+        border-bottom: 1px solid #00000025;
     }
 }
